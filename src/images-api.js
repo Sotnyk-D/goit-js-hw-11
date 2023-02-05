@@ -9,7 +9,7 @@ export default class ImagesApi {
   async fetchImages() {
     try {
       const r = await axios.get(
-        `https://pixabay.com/api/?key=33395330-543dfcfc57dd38064198ac425=${this.query}&safesearch=true&image_type=photo&orientation=horizontal&per_page=${this.per_page}&page=${this.page}`
+        `https://pixabay.com/api/?key=33235528-f77f5559eb18b5179aa92c19b&q=${this.query}&safesearch=true&image_type=photo&orientation=horizontal&per_page=${this.per_page}&page=${this.page}`
       );
       this.getNewPage();
       return r.data;
