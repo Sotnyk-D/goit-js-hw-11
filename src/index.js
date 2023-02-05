@@ -102,7 +102,7 @@ function addAllCards(articles) {
   if (articles.totalHits === 0) {
     showButton(false);
     gallery.innerHTML = '';
-    return Notiflix.Notify.info(
+    return Notiflix.Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
     );
   } else {
